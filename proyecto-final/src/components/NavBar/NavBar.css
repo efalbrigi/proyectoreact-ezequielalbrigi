@@ -1,8 +1,6 @@
 .nav{
-    
     list-style: none;
-   
-    margin-left: 30%;
+    margin-left: 25%;
     display:flex;
     justify-content: center;
     color: black;
@@ -12,8 +10,7 @@
 .nav a{
     text-decoration: none;
     color: white;
-    margin-left: 5%;
-    
+    margin-left: 4%;
 }
 
 .nav :hover{
@@ -25,7 +22,15 @@
     color: white;
     margin-left: 2%;
 }
+
 .navbar{
     display: flex;
     background-color: #282c34;
+}
+
+.img-carrito{
+    width: 3%;
+    height: 3%;
+    margin-top: 2.5%;
+    margin-left: 28%;
 }

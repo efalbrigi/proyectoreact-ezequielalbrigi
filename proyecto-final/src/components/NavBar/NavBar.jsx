@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css';
-
+import carrito from '../CartWidget/img/carrito.png';
 
 function navbar(props) {
     return (
@@ -17,8 +17,12 @@ function navbar(props) {
                 <a href='#'>CONTACTOS </a>
                
             </ul>
+            <img src={carrito} className='img-carrito' />
         </div>
+        
     );
 }
 
 export default navbar;
+
+
