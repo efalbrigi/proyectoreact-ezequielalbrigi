@@ -5,6 +5,7 @@ const Item =({title, image, precio}) =>{
     return(
         <>
             <div className='card'>
+
                 <div className='header'>{title}</div>
                 
                 <div className='content'>
@@ -17,13 +18,8 @@ const Item =({title, image, precio}) =>{
 
                 <div className='footer'>{precio}</div>
 
-
-
-
-
             </div>
-            <h1>{title}</h1>
-            <h2>{precio}</h2>
+            
             
         </>
     )

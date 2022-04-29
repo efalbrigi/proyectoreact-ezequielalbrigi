@@ -1,5 +1,11 @@
 .imagen{
     
-    width: 30%;
+    width: 50%;
      
+}
+
+.card{
+    width: 20%;
+   justify-items: center;
+    
 }
