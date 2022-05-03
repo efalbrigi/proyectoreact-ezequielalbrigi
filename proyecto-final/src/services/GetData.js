@@ -1,4 +1,4 @@
-const data =[
+/*const data =[
     {
         id:1,
         image:
@@ -32,3 +32,5 @@ const GetData= new Promise((resolve) =>{
 });
 
 export default GetData;
+
+*/
