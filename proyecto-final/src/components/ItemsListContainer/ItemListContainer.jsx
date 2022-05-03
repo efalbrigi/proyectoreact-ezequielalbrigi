@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ItemList from '../intemList/itemList';
-import GetData from '../../services/GetData';
+//import GetData from '../../services/GetData';
 import './item-list-container.css'
 
 
@@ -53,6 +53,7 @@ return
 
  </div>
 
+};
 
 
 
@@ -72,8 +73,7 @@ return
 
 
 
-
-/*const ItemListContainer=({greeting}) => {
+/* const ItemListContainer=({greeting}) => {
   const [productos, setproductos] = useState([]);
   console.log("productos", productos);
 
