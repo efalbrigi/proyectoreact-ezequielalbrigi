@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "react-bootstrap";
 
-/*const ItemCount=({stock, initial}) => {
+const ItemCount=({stock, initial}) => {
 //Logica
     const [count, setCount]= useState(initial);
     console.log("Soy el contador",count);
@@ -50,5 +50,5 @@ import { Button } from "react-bootstrap";
 
 };
 
+
 export default ItemCount;
-*/

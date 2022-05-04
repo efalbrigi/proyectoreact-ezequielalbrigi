@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import ItemList from '../intemList/itemList';
-//import GetData from '../../services/GetData';
+import React from 'react'
+import Item from '../Item/Item';
 import './item-list-container.css'
 
 
-function getProducts() {
-    const myPromoise = new Promise ((resolve, reject) =>{
-      
-    const productsList = [
+function ItemListContainer({greeting}) {
+    const ItemList = [
       {
         id: 1,
         image: "https://fondosmil.com/fondo/14642.jpg",
         title: "Hombre Araña",
-        descripcion: "Cuadro Hombre Araña",
         precio: "USD 50",
         stock: "4",
       },
@@ -20,53 +16,23 @@ function getProducts() {
         id: 2,
         image: "https://fondosmil.com/fondo/14644.jpg",
         title: "SuperMan",
-        descripcion: "Cuadro SuperMan",
         precio: "USD 58",
         stock: "10",
       }
     ];
 
-    setTimeout (() => {
-      resolve (productsList);
-    }, 2000);
-    
-  });
 
-  return myPromoise;
-};
+  return ( 
+    <div className='list-item-container'>
+      {ItemList.map((item,i) =><Item item={item} key={item.id} />)}
 
-function ItemListContainer ({greeting}){
+    </div>
 
-  const [products, setProducts]=useState([]);
-
-  useEffect (() =>{
-    getProducts ()
-      .then (res => {
-        setProducts(res)
-      })
-}, []);
-
-return
-
- <div className='list-item-container'>
-   <ItemList items={products} />
-
- </div>
+  )
 
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
+export default ItemListContainer;
 
 
 
@@ -94,5 +60,4 @@ return
 };
 
 export default ItemListContainer
-
 */
