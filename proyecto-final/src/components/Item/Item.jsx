@@ -1,5 +1,6 @@
 import './item.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 function Item ({item}) {
     return (
@@ -11,6 +12,12 @@ function Item ({item}) {
           <div className="img-container">
             <img className="imagen" src={item.image} alt="imagen" />
           </div>
+          <Link to={'/item/' + item?.id} className='detalle-item'>
+            
+          <button type="button" class="btn btn-secondary boton" >Descripción</button>
+ 
+            
+          </Link>
         </div>
 
         <div className="footer">{item.precio}</div>

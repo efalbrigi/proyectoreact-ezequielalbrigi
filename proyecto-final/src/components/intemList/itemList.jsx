@@ -1,6 +1,22 @@
 import Item from "../Item/Item";
 
-const ItemList =({productos}) =>{
+
+
+function itemList ({items}){
+
+    return(
+
+        <div className='item-list'>
+            {items.map(item => <Item item={item} key={item.id}/>)}
+
+        </div>
+    )
+}
+
+export default itemList
+
+
+/*const ItemList =({productos}) =>{
     return (
         <>
             
@@ -16,3 +32,4 @@ const ItemList =({productos}) =>{
 };
 
 export default ItemList
+*/
