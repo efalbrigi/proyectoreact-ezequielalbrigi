@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemDetailContainer from './Pages/ItemDetailContainer/ItemDetailContainer';
-import ItemListContainer from './Pages/ItemsListContainer/ItemsListContainer';
+import ItemListContainer from './components/ItemsListContainer/ItemsListContainer';
 import { Route, Routes } from 'react-router';
 
 function App() {

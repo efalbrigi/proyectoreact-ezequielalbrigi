@@ -1,9 +1,9 @@
 import React, { useEffect,useState } from 'react'
-import Item from '../../components/Item/Item';
-import ItemList from '../../components/intemList/itemList';
+import Item from '../Item/Item';
+import ItemList from '../intemList/itemList';
 import './item-list-container.css'
 import { useParams } from 'react-router';
-import itemList from '../../components/intemList/itemList';
+import itemList from '../intemList/itemList';
 
 
 function getItemList(category){
